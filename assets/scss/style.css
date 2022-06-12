@@ -7881,7 +7881,7 @@ footer.footer .item:hover > a {
 }
 .select-staff > ul > li > a > .rate > .rate-stars > .star-item {
   font-size: 15px;
-  margin-bottom: 0;
+  margin: 0;
   display: inline-block;
   padding-right: 3px;
   position: relative;
@@ -7900,7 +7900,7 @@ footer.footer .item:hover > a {
 }
 .select-staff > ul > li > a > .rate > .rate-stars > .star-item.star-item_half {
   margin-right: -19.88px;
-  z-index: 2;
+  z-index: 4;
 }
 .select-staff > ul > li > a > .rate > .rate-stars.is-rate > .star-item {
   color: #ffdf2c !important;
