@@ -7837,7 +7837,8 @@ footer.footer .item:hover > a {
   top: 100%;
   left: 0;
   width: max-content;
-  z-index: 2;
+  max-height: 368px;
+  overflow-y: auto;
   background: #fff;
   border-radius: 10px;
   border: 1px solid #c2c0c0;
@@ -7845,6 +7846,21 @@ footer.footer .item:hover > a {
   display: none;
   max-width: 100%;
   z-index: 100;
+}
+.select-staff > ul::-webkit-scrollbar {
+  width: 5px;
+}
+.select-staff > ul::-webkit-scrollbar-track {
+  background: #fff;
+}
+.select-staff > ul::-webkit-scrollbar-thumb {
+  background: #acacac;
+}
+.select-staff > ul::-webkit-scrollbar-thumb:hover {
+  background: #7b7b7b;
+}
+.select-staff > ul > li + li {
+  border-top: 1px solid #c2c0c0;
 }
 .select-staff > ul > li > a {
   display: flex;

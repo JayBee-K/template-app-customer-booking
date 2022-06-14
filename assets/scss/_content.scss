@@ -5847,7 +5847,8 @@
     top: 100%;
     left: 0;
     width: max-content;
-    z-index: 2;
+    max-height: 368px;
+    overflow-y: auto;
     background: #fff;
     border-radius: 10px;
     border: 1px solid #c2c0c0;
@@ -5856,7 +5857,28 @@
     max-width: 100%;
     z-index: 100;
 
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #fff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #acacac;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: #7b7b7b;
+    }
+
     > li {
+
+      &+li {
+        border-top: 1px solid #c2c0c0;
+      }
+
       > a {
         display: flex;
         align-items: center;
